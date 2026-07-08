@@ -37,6 +37,18 @@ section {
     width: 88px;
     margin-bottom: 10px;
   }
+  .container_img_secundario{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+img:nth-child(1){
+  width: 80px;
+}
+img:nth-child(2){
+  width: 70px;
+}
+  }
 
 }
 
@@ -55,4 +67,24 @@ section {
       width: 32px;
     }
   }
+}
+
+.container_img_books{
+  img:nth-child(1){
+    width: 222px;
+    height: 254px;
+  }
+img:nth-child(2){
+width: 467px;
+height: 617px;
+
+}
+img:nth-child(3){
+width: 172px;
+height: 536px;
+}
+img:nth-child(4){
+width: 172px;
+height: 536px;
+}
 }

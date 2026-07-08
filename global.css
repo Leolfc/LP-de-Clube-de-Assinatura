@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url(./img/hero-background.png);
+  background-size: contain;
+  max-width: 100%;
+  object-fit: cover;
+  height: 568px;
+  background-position: center;
+  color: white;
+  background-repeat: no-repeat;
+}
+html{
+  background-color: #00050A;
+}
+
+img{
+  max-width: 100%;
+}

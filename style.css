@@ -78,7 +78,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  
+
   div {
     display: flex;
     gap: 10px;
@@ -92,93 +92,103 @@ section {
 }
 
 .container_img_books {
- 
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 96px;
- position: relative;
-
+  position: relative;
 
   img:nth-child(1) {
-   width: 467px;
+    width: 467px;
     height: 617px;
-    
-z-index: 1;
- cursor: pointer;
+
+    z-index: 1;
+    cursor: pointer;
   }
   img:nth-child(2) {
     width: 222px;
     height: 254px;
     position: absolute;
     transition: transform 1s ease-in-out;
-
-   
   }
-   img:nth-child(3) {
+  img:nth-child(3) {
     width: 172px;
     height: 536px;
     position: absolute;
     transition: transform 1s ease-in-out;
-   
   }
   img:nth-child(4) {
     width: 172px;
     height: 536px;
     position: absolute;
-   transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
   }
-  img:nth-child(5){
+  img:nth-child(5) {
     width: 172px;
     height: 536px;
     position: absolute;
   }
 }
 
-.container_img_books:hover img:nth-child(2){
-  transform: translate(-280px, 230px) rotate(-5deg)
+.container_img_books:hover img:nth-child(2) {
+  transform: translate(-280px, 230px) rotate(-5deg);
 }
 
-.container_img_books:hover img:nth-child(3){
+.container_img_books:hover img:nth-child(3) {
   transform: translate(280px) rotate(30deg);
 }
 
-.container_img_books:hover img:nth-child(4){
+.container_img_books:hover img:nth-child(4) {
   transform: translate(300px) rotate(40deg);
 }
 
-.valores{
+.valores {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-top: 229px;
   position: relative;
   align-items: center;
- 
-  .container_planos{
+
+  .container_planos {
     padding: 32px 32px 28px 32px;
     align-items: center;
     width: 288px;
     height: 416px;
-     border-radius: 12px;
-     background-color: #000F1F;
+    border-radius: 12px;
+    background-color: #000f1f;
     display: flex;
     flex-direction: column;
-    gap:66px;
+    gap: 66px;
     position: absolute;
-    transition: transform 1s ease;
-
   }
  
-  div:hover{
+.anual{
+  transition: transform 1s ease-in-out;
+}
+
+.mensal{
+  transition: transform 1s ease-in-out;
+}
+
+  div:hover {
     background-color: #001933;
-     cursor: pointer;
- 
+    cursor: pointer;
+  }
+  .semestral {
+    & span:nth-child(1) {
+      color: #c59dd2;
+    }
+  }
+  span:nth-child(1) {
+    color: #73b6d2;
+  }
 }
+
+.valores:hover .anual{
+  transform: translate(280px) rotate(5deg);
 }
-.container_planos:hover .semestral {
-   transform: translate(280px) rotate(5deg);
-}
-.container_planos:hover .anual {
-   transform: translate(-280px) rotate(-5deg);
+
+.valores:hover .mensal{
+  transform:translate(-280px) rotate(-5deg);
 }

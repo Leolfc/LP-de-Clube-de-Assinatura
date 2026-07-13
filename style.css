@@ -18,27 +18,26 @@ header {
     height: 40px;
     background-color: #7d298a;
   }
-
 }
-  section:nth-child(2) {
-    display:flex;
-    flex-direction: column;
+section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
   margin-top: 50px;
   text-align: center;
   width: 100%;
 
- gap:12px;
- p{
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 32px;
-  color: #FFFFFF;
- }
- & h1{
+  gap: 12px;
+  p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+  }
+  & h1 {
     font-size: 48px;
     font-weight: bold;
-}
   }
+}
 .container_segundario {
   margin-top: 30%;
   max-width: 100%;
@@ -156,7 +155,10 @@ header {
 .container_img_books:hover img:nth-child(4) {
   transform: translate(300px) rotate(40deg);
 }
-
+.container_titulo_valores {
+  text-align: center;
+  margin-block: 12.125rem 3.5rem;
+}
 .valores {
   display: flex;
   justify-content: center;
@@ -176,50 +178,61 @@ header {
     flex-direction: column;
     gap: 66px;
     position: absolute;
- .coelho{
-   position: absolute;
-   top:0; 
-left:40px
-  }
- 
-  button{
-      padding:10px 10px;
-      border-radius: 10px;
-      width:100%;
-      cursor: pointer;
-      color: white;
-      margin-block: 24px 28px ;
-      border: none;
-      font-weight: bold;
-      background-color: #144A72;
-      
+    margin-top: 138px;
+    .coelho {
+      position: absolute;
+      top: -50px;
+      left: 40px;
     }
 
-  & div:nth-child(1) .plano{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
-    
-   
-  }
-    span:nth-child(2){
-      background-color: #002347 ;
+    button {
+      padding: 10px 10px;
+      border-radius: 10px;
+      width: 100%;
+      cursor: pointer;
+      color: white;
+      margin-block: 24px 28px;
+      border: none;
+      font-weight: bold;
+      background-color: #144a72;
+    }
+
+    & div:nth-child(1) .plano {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+    span:nth-child(2) {
+      background-color: #002347;
       border-radius: 10px;
       padding: 5px 2px;
       text-align: center;
-      width: 90px ;
+      width: 90px;
       height: 30px;
     }
   }
- 
-.anual{
-  transition: transform 1s ease-in-out;
-}
 
-.mensal{
-  transition: transform 1s ease-in-out;
-}
+  .anual {
+    transition: transform 1s ease-in-out;
+  }
+
+  .mensal {
+    transition: transform 1s ease-in-out;
+
+    img {
+      position: absolute;
+      top: -50px;
+      left: -60px;
+    }
+    img:nth-child(2) {
+      position: absolute;
+      top:10px;
+      left:-50px;
+     
+     
+    }
+  }
 
   div:hover {
     background-color: #001933;
@@ -228,23 +241,20 @@ left:40px
   .semestral {
     & span:nth-child(1) {
       color: #c59dd2;
-     
     }
-    button{
-      background-color: #7D298A;
+    button {
+      background-color: #7d298a;
     }
-    
-  
   }
   span:nth-child(1) {
     color: #73b6d2;
   }
 }
 
-.valores:hover .anual{
+.valores:hover .anual {
   transform: translate(280px) rotate(5deg);
 }
 
-.valores:hover .mensal{
-  transform:translate(-280px) rotate(-5deg);
+.valores:hover .mensal {
+  transform: translate(-280px) rotate(-5deg);
 }
